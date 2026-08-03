@@ -26,6 +26,16 @@ export default function Experience() {
             "Maintained Secret-level security clearance throughout employment"
           ]}  
         />
+
+        <Card 
+          title="Independent Software Developer" 
+          subTitle="J St. Studio // 2023 - present" 
+          description="Building a multiplayer roguelike prototype in Unreal Engine 5 as the foundation for an independent studio." 
+          bullets={[
+            "Designed and implemented core gameplay systems (combat, progression, level-ups, skills) for a multiplayer roguelike action-shooter prototype in Unreal Engine 5",
+            "Built the full content pipeline end-to-end: 3D modeling, texturing, and asset integration using Blender + UE5",
+            "Implemented custom combat systems and mechanics leveraging Unreal Engine 5's Gameplay Ability System."
+            ]} />
         
         <Card 
           title="Information Technology Specialist" 
@@ -36,10 +46,16 @@ employees and leadership."
             "Developed custom EDR tooling using PowerShell to enhance response capabilities",
             "Developed software wrappers for Microsofts’ User State Migration Tool (USMT)",
             ]} />
-      </div>
 
-      
-      
+        <Card
+          link="https://sovereigncomputersystems.com"
+          title="Web Developer" 
+          subTitle="Sovereign Computer Systems // 2025 - present" 
+          description="Provides niche security-focused computing solutions to clients." 
+          bullets={[
+            "Currently under active development with Next.js"
+            ]} />
+      </div>
 
       <div className="flex justify-center">
         <Button variant="primary" href="https://www.linkedin.com/in/hjgraves/">

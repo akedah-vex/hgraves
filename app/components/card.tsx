@@ -7,7 +7,7 @@ export default function Card({ link="", title="", subTitle="", description="", b
 
 
   const renderBullets = () => {
-    if (bullets.length <= 1) return
+    if (bullets.length <= 1 && bullets[0] === "") return
     return bullets.map((bullet, index) => (
       <li key={index}>{bullet}</li>
     ));
