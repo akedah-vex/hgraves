@@ -12,12 +12,12 @@ export default function Hero({ title="", description="", primaryLink="", primary
           {description}
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <a href={primaryLink} className="px-8 py-3 rounded-full bg-black text-white font-medium hover:border border-indigo-500 transition-colors shadow-lg dark:hover:shadow-blue-500/20">
+          <Link href={primaryLink} className="px-8 py-3 rounded-full bg-black text-white font-medium hover:border border-indigo-500 transition-colors shadow-lg dark:hover:shadow-blue-500/20">
             {primaryText}
-          </a>
-          <a href={secondaryLink} className="px-8 py-3 rounded-full border border-zinc-300 dark:border-zinc-700 text-zinc-900 dark:text-white font-medium hover:bg-zinc-50 dark:hover:bg-zinc-900/20 transition-colors">
+          </Link>
+          <Link href={secondaryLink} className="px-8 py-3 rounded-full border border-zinc-300 dark:border-zinc-700 text-zinc-900 dark:text-white font-medium hover:bg-zinc-50 dark:hover:bg-zinc-900/20 transition-colors">
             {secondaryText}
-          </a>
+          </Link>
         </div>
       </main>
     </div>
