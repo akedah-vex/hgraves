@@ -2,6 +2,7 @@ import Link from "next/link";
 import Card from "../components/card";
 import Button from "../components/button";
 import Footer from "../components/footer";
+import { JSX } from "react/jsx-runtime";
 
 export default function Projects() {
   const link = "https://dehank.com";
@@ -24,7 +25,7 @@ export default function Projects() {
         <Card 
           link="https://github.com/akedah-vex/dehank.com.git"
           title="Full Stack Web Application" 
-          subTitle={ref} 
+          subTitle={"dehank.com"} 
           description="Developing a continuously evolving full-stack web application with a React/Vite frontend and RESTful API backend" 
           bullets={[
             "Built with modern web technologies; React/Vite frontend and RESTful API backend",

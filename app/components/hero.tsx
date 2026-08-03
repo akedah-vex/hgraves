@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function Hero({ title, description, primaryLink, primaryText, secondaryLink, secondaryText }) {
+export default function Hero({ title="", description="", primaryLink="", primaryText="", secondaryLink="", secondaryText="" }) {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen relative overflow-hidden">
       <div className="absolute opacity-10  bg-gradient-to-br from-slate-800/20 via-transparent to-indigo-900/30 dark:from-slate-950/40 dark:via-transparent dark:to-indigo-950/40 pointer-events-none"></div>
