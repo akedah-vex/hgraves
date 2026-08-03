@@ -2,7 +2,6 @@ import Hero from "./components/hero";
 
 export default function Home() {
   return (
-    <div className="w-full">
     <Hero 
       title="Henry J. Graves" 
       description="Software Engineer" 
@@ -11,6 +10,5 @@ export default function Home() {
       secondaryLink="/projects" 
       secondaryText="My Projects" 
     />
-    </div>
   );
 }

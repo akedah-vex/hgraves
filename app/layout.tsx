@@ -26,9 +26,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}>
-      <body className="min-h-screen flex flex-col bg-zinc-50 font-sans dark:bg-black relative overflow-hidden">
+      <body className="min-h-screen flex flex-col bg-slate-50 font-sans dark:bg-slate-950 relative overflow-hidden">
         {/* Subtle background decoration */}
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-100 via-transparent to-purple-100 dark:from-blue-900/20 dark:via-transparent dark:to-blue-900/20"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-slate-800/10 via-transparent to-indigo-900/10 dark:from-slate-950/20 dark:via-transparent dark:to-indigo-950/20 pointer-events-none"></div>
 
         <Navbar />
 
