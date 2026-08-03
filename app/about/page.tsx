@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Card from '../components/card';
+import Button from '../components/button';
 
 export default function About() {
   return (
@@ -8,7 +9,7 @@ export default function About() {
         About Me
       </h1>
       <p className="text-xl md:text-2xl text-zinc-600 dark:text-zinc-400 mb-8 max-w-2xl mx-auto">
-        I'm Henry Graves, a software engineer passionate about building scalable web applications and exploring the intersection of AI and frontend development.
+        Hi there! My name is Henry. I'm a passionate computer science specialist with experience across many domains. Lately I'm diving deep into software engineering and looking for opportunities to improve my skills.
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
@@ -17,9 +18,11 @@ export default function About() {
         <Card title="DevOps & Infra" description="Git, Docker, Vercel, CI/CD Pipelines" />
       </div>
 
-      <Link href="/contact" className="px-8 py-3 rounded-full bg-black text-white font-medium hover:bg-zinc-900 transition-colors shadow-lg dark:hover:shadow-blue-500/20">
-        Let's Connect
-      </Link>
+      <div className="flex justify-center">
+        <Button variant="primary" href="/contact">
+          Let's Connect
+        </Button>
+      </div>
     </main>
   );
 }

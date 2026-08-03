@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Button from './button'
 
 export default function Navbar() {
   return (
@@ -11,19 +12,18 @@ export default function Navbar() {
 
         {/* Navigation Links */}
         <div className="flex flex-col sm:flex-row gap-4 items-center justify-end">
-          <Link href="/experience" className="text-lg font-medium text-zinc-600 dark:text-zinc-300 hover:bg-zinc-50 dark:hover:bg-zinc-900/20 px-4 py-2 rounded-full transition-colors duration-200">
+          <Button href="/experience" variant="primary">
             Experience
-          </Link>
-          <Link href="/projects" className="text-lg font-medium text-zinc-600 dark:text-zinc-300 hover:bg-zinc-50 dark:hover:bg-zinc-900/20 px-4 py-2 rounded-full transition-colors duration-200">
+          </Button>
+          <Button href="/projects" variant="primary">
             Projects
-          </Link>
-          <Link href="/skills" className="text-lg font-medium text-zinc-600 dark:text-zinc-300 hover:bg-zinc-50 dark:hover:bg-zinc-900/20 px-4 py-2 rounded-full transition-colors duration-200">
+          </Button>
+          <Button href="/skills" variant="primary">
             Skills
-          </Link>
-
-          <Link href="/contact" className="text-lg px-8 py-3 rounded-full bg-black text-white font-medium hover:bg-zinc-900 transition-colors shadow-lg dark:hover:shadow-blue-500/20">
+          </Button>
+          <Button variant="secondary" href="/contact">
             Let's Connect
-          </Link>
+          </Button>
         </div>
       </div>
     </nav>

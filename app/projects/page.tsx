@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Card from "../components/card";
+import Button from "../components/button";
 
 export default function Projects() {
   return (
@@ -15,7 +16,11 @@ export default function Projects() {
         <Card title="Project 3" description="Placeholder for scalable project card structure." />
       </div>
 
-      <Link href="/" className="px-8 py-3 rounded-full bg-black text-white font-medium hover:bg-zinc-900 transition-colors shadow-lg dark:hover:shadow-blue-500/20">Back to Home</Link>
+      <div className="flex justify-center pt-10">
+        <Button variant="primary" href="https://www.linkedin.com/in/hjgraves/">
+          Linkedin
+        </Button>
+      </div>
     </main>
   );
 }

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Card from "../components/card";
+import Button from '../components/button'
 
 export default function Experience() {
   return (
@@ -17,9 +18,11 @@ export default function Experience() {
         <Card title="Junior Developer" description="OpenSourceHub | 2016 - 2018" />
       </div>
 
-      <a href="/" className="px-8 py-3 rounded-full bg-black text-white font-medium hover:bg-zinc-900 transition-colors shadow-lg dark:hover:shadow-blue-500/20">
-        Back to Home
-      </a>
+      <div className="flex justify-center">
+        <Button variant="primary" href="https://www.linkedin.com/in/hjgraves/">
+          Let's Connect
+        </Button>
+      </div>
     </main>
   );
 }
