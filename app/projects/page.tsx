@@ -9,7 +9,7 @@ export default function Projects() {
     dehank.com
   </a>;
   return (
-    <div className="text-center px-4 max-w-3xl  overflow-y-auto">
+    <main className="text-center px-4 max-w-3xl min-h-[100vh] overflow-y-auto">
       <h1 className="text-6xl md:text-8xl font-bold tracking-tight mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 dark:from-blue-300 dark:via-purple-300 dark:to-pink-500">
         Projects
       </h1>
@@ -55,6 +55,6 @@ export default function Projects() {
           Professional Experience
         </Button>
       </div>
-    </div>
+    </main>
   );
 }
