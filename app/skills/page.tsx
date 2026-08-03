@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Card from "../components/card";
+import Button from "../components/button";
 
 export default function Skills() {
   return (
@@ -8,16 +9,30 @@ export default function Skills() {
         Skills
       </h1>
       <p className="text-xl md:text-2xl text-zinc-600 dark:text-zinc-400 mb-8 max-w-2xl mx-auto">
-        A breakdown of the core technologies and methodologies I use to build modern, scalable applications.
+        A breakdown of the core technologies I use to build.<br /> Anything is learnable.
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-        <Card title="Frontend Development" description="React, Next.js, Tailwind CSS, TypeScript" />
-        <Card title="Backend & AI Engineering" description="Node.js, Python, Custom LLM Toolchain, REST/GraphQL APIs" />
-        <Card title="DevOps & Infrastructure" description="Git, Docker, Vercel, CI/CD Pipelines, Cloud Architecture" />
+        <Card 
+          title="Frontend & UI/UX" 
+          description="React, Vite, Next.js, Tailwind CSS, TypeScript, Javascript, HTML, CSS" />
+        <Card 
+          title="Backend & Services" 
+          description="Node.js, Python, langchain, REST APIs, " />
+        <Card 
+          title="DevOps & Infrastructure" 
+          description="Agentic Coding Infrastructure, Git, Docker, Vercel, CI/CD, Cloud Architecture" />
+        <Card 
+          title="Database Solutions"
+          description="PostgreSQL, MySQL, MongoDB, Firebase" />
+        <Card 
+          title="AI Tools" 
+          description="Aider, LangChain, LM Studio" />
       </div>
 
-      <Link href="/contact" className="px-8 py-3 rounded-full bg-black text-white font-medium hover:bg-zinc-900 transition-colors shadow-lg dark:hover:shadow-blue-500/20">Let's Connect</Link>
+      <Button href="/contact" variant="primary">
+        Let's Connect
+      </Button>
     </main>
   );
 }
