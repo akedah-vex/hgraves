@@ -3,7 +3,9 @@ import Button from "../components/button";
 
 export default function Contact() {
   return (
-    <main className="text-center px-4 max-w-3xl">
+    <main className="text-center pt-30 px-4 max-w-3xl mx-auto min-h-screen h-screen overflow-y-auto scroll-pt-4 pt-8 [&::-webkit-scrollbar]:hidden
+  [-ms-overflow-style:none]
+  [scrollbar-width:none]">
       <h1 className="text-6xl md:text-8xl font-bold tracking-tight mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 dark:from-blue-300 dark:via-purple-300 dark:to-pink-500">
         Contact
       </h1>
