@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <Hero 
       title="Henry Graves" 
-      description="Software Engineer" 
+      description="Software Developer" 
       primaryLink="/about" 
       primaryText="About me" 
       secondaryLink="/projects" 
