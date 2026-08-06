@@ -50,7 +50,7 @@ export default function Projects() {
           subTitle="Proxmox / Kali Linux / Forgejo / GCP / DAST & SAST"
           description="Architected and implemented a DevSecOps CI/CD pipeline for my homelab to ensure robust application deployments." 
           bullets={[
-            "Designed and implemented a comprehensive CI/CD pipeline that included OWASP ZAP security scans, SAST / DAST analysis, as well as live deployment to a local VPS for internal testing.",
+            "Designed and built a complete internal DevSecOps CI/CD pipeline using Forgejo on Proxmox, automating builds, testing, analysis and deployments for a React + Node.js application to an nginx web server running on Debian, configuring lab infrastructure to mirror production. ",
             "Interested in adding local LLM integration to generate automated code suggestions / reports / documentation / critiques.",
             "This pipeline deploys dehank.com to production."
           ]}

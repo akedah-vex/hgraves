@@ -11,7 +11,8 @@ export default function About() {
         About Me
       </h1>
       <p className="text-xl md:text-2xl text-zinc-600 dark:text-zinc-400 mb-8 max-w-2xl mx-auto">
-        Hi there! My name is Henry. I&apos;m a passionate software developer with experience across many domains. I'm eager to contribute to meaningful projects and continue growing in the field of computer science.
+        Hi there! My name is Henry. I&apos;m a passionate software developer with experience across many domains. Seeking a collaborative team environment where I can contribute to meaningful
+software while continuing to grow as an engineer
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12 pt-10">
