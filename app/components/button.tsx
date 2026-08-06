@@ -1,7 +1,7 @@
 import type { ReactNode } from "react";
 import Link from "next/link";
 
-export type ButtonVariant = "primary" | "secondary";
+export type ButtonVariant = "primary" | "secondary" | string;
 
 export default function Button({ variant, children, onClick, href }: {
   variant: ButtonVariant;
@@ -16,18 +16,19 @@ export default function Button({ variant, children, onClick, href }: {
   const secondary = "border border-zinc-300 dark:border-zinc-700 text-zinc-900 dark:text-white hover:bg-zinc-50 dark:hover:bg-zinc-900/20";
 
   const style = isPrimary ? primary : isSecondary ? secondary : primary;
+  const baseStyle = "flex items-center  justify-center px-6 md:px-8 py-2 md:py-3 font-medium transition-all duration-200 ease-in-out rounded-full min-h-[44px] min-w-[44px]";
 
-  if (!href) return
+  if (href) {
+    return (
+      <Link href={href} onClick={onClick} className={`${baseStyle} ${style}`}>
+        {children}
+      </Link>
+    );
+  }
 
   return (
-    <div className="flex justify-center">
-    <Link
-      href={href}
-      onClick={onClick}
-      className={`flex items-center justify-center px-8 py-3 font-medium transition-all duration-200 ease-in-out rounded-full ${style}`}
-    >
+    <button onClick={onClick} className={`${baseStyle} ${style}`}>
       {children}
-    </Link>
-    </div>
+    </button>
   );
 }
