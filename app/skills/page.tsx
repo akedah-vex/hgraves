@@ -12,8 +12,18 @@ export default function Skills() {
         Skills
       </h1>
       <p className="text-xl md:text-2xl text-zinc-600 dark:text-zinc-400 mb-8 max-w-2xl mx-auto">
-        A breakdown of the core technologies I use to build.<br /> Anything is learnable.
+        A breakdown of the core technologies I use to build.
       </p>
+      <div className="flex flex-col items-center">
+        <div className="flex flex-row text-xl md:text-2xl text-zinc-600 dark:text-zinc-400 mb-8 max-w-2xl mx-auto">
+          <p className="flex bg-clip-text text-transparent bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 dark:from-blue-300 dark:via-purple-300 dark:to-pink-500">
+            <b>Anything&nbsp;</b>
+          </p>
+          <p className="flex">
+            is learnable.
+          </p>
+        </div>
+      </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
         <Card 
@@ -21,10 +31,10 @@ export default function Skills() {
           description="React, Vite, Tailwind CSS, TypeScript, Javascript, HTML, CSS, Learning Next.js" />
         <Card 
           title="Backend & Services" 
-          description="Node.js, Python, langchain, REST APIs, " />
+          description="Node.js, Python, REST APIs" />
         <Card 
           title="DevOps & Infrastructure" 
-          description="Agentic Coding Infrastructure, Git, Docker, Vercel, CI/CD, Cloud Architecture" />
+          description="Git, Docker, Vercel, CI/CD" />
         <Card 
           title="Database Solutions"
           description="PostgreSQL, MySQL, MongoDB, Firebase" />
