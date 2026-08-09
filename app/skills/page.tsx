@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Card from "../components/card";
 import Button from "../components/button";
+import Footer from "@/components/footer";
 
 export default function Skills() {
   return (
@@ -35,9 +36,12 @@ export default function Skills() {
           description="C/C++, Ada, Learning Zig!" />
       </div>
 
-      <Button href="/contact" variant="primary">
-        Let's Connect
-      </Button>
+      <div className="flex justify-center p-10">
+        <Button variant="primary" href="/contact">
+          Let's Connect
+        </Button>
+      </div>
+      <Footer />
     </main>
   );
 }

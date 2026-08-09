@@ -32,7 +32,7 @@ export default function Projects() {
             "Automated deliveries via local CI/CD pipeline that connects to GitHub Actions for live deployments."
           ]}
         />
-        <Card 
+        <Card
           title="Local Agentic Coding Toolchain"
           subTitle="Aider / LangChain / LM Studio"
           description="Built a local agentic coding toolchain on my homelab using aider, langchain and lmstudio to increase productivity." 

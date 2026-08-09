@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <footer className="text-center text-sm text-zinc-400 py-6">
       Built with Next.js, Tailwind CSS, a custom-built local LLM toolchain, and a lot of caffeine. <br /><br />
-      &copy; {CURRENT_YEAR} Henry Graves. All rights reserved.
+      &copy; {CURRENT_YEAR} Henry J. Graves. All rights reserved.
     </footer>
   );
 }
