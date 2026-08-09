@@ -12,7 +12,7 @@ export default function Navbar() {
     { label: "Experience", href: "/experience" },                       
     { label: "Projects", href: "/projects" },                           
     { label: "Skills", href: "/skills" },                               
-    { label: "Let's Connect", href: "/contact", variant: "secondary" }  
+    { label: "Let's Connect", href: "https://www.linkedin.com/in/hjgraves/", variant: "secondary" }  
   ];                                                                    
                                                                         
   return (                                                              
