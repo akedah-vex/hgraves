@@ -2,7 +2,6 @@ import Link from "next/link";
 import Card from "../components/card";
 import Button from "../components/button";
 import Footer from "../components/footer";
-import { JSX } from "react/jsx-runtime";
 
 export default function Projects() {
   const link = "https://dehank.com";
@@ -46,8 +45,8 @@ export default function Projects() {
         />
         
         <Card 
-          title="DevSecOps CI/CD Pipeline // Homelab"
-          subTitle="Proxmox / Kali Linux / Forgejo / GCP / DAST & SAST"
+          title="DevSecOps CI/CD Pipeline"
+          subTitle="Proxmox / Kali Linux / Forgejo / GCP "
           description="Architected and implemented a DevSecOps CI/CD pipeline for my homelab to ensure robust application deployments." 
           bullets={[
             "Designed and built a complete internal DevSecOps CI/CD pipeline using Forgejo on Proxmox, automating builds, testing, analysis and deployments for a React + Node.js application to an nginx web server running on Debian, configuring lab infrastructure to mirror production. ",
