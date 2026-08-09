@@ -1,9 +1,11 @@
 import Link from "next/link";
 import Card from "../components/card";
 import Button from '../components/button'
+import Wrapper from "@/components/wrapper";
 
 export default function Experience() {
   return (
+    <Wrapper>
     <main className="text-center pt-30 px-4 max-w-3xl mx-auto min-h-screen h-screen overflow-y-auto scroll-pt-4 pt-8 [&::-webkit-scrollbar]:hidden
   [-ms-overflow-style:none]
   [scrollbar-width:none]">
@@ -29,7 +31,7 @@ export default function Experience() {
 
         <Card 
           title="Independent Software Developer" 
-          subTitle="J St. Studio // 2023 - present" 
+          subTitle="J St. Studio (self-employed) // 2023 - present" 
           description="Building a multiplayer roguelike prototype in Unreal Engine 5 as the foundation for an independent studio." 
           bullets={[
             "Designed and implemented core gameplay systems (combat, progression, level-ups, skills) for a multiplayer roguelike action-shooter prototype in Unreal Engine 5",
@@ -39,7 +41,7 @@ export default function Experience() {
         
         <Card 
           title="Information Technology Specialist" 
-          subTitle="County of Colusa, CA // 2025 - present" 
+          subTitle="County of Colusa, CA // 2025 - present"
           description="Delivered comprehensive IT support while strengthening organizational security posture for the county
 employees and leadership." 
           bullets={[
@@ -63,5 +65,6 @@ employees and leadership."
         </Button>
       </div>
     </main>
+    </Wrapper>
   );
 }

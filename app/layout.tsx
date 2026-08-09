@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Henry Graves Portfolio",
+  title: "Henry Graves",
   description: "Software Engineer building scalable web applications.",
 };
 
