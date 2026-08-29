@@ -40,7 +40,7 @@ export default function Experience() {
         
         <Card 
           title="Information Technology Specialist" 
-          subTitle="County of Colusa, CA // 2025 - present"
+          subTitle="County of Colusa, CA // 2025 - 2026"
           description="Delivered comprehensive IT support while strengthening organizational security posture for the county
 employees and leadership." 
           bullets={[
